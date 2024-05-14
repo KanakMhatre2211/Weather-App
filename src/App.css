@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #000; */
+}
+
+
+
+
+
+
+.App{
+  text-align: center;
+  margin: 0px auto 0;
+ 
+  width: 85%;
+  background-color:#4C4B4B;
+  border-radius: 85px;
+  height: 900px;
+  padding: 40px 40px;
+}
+
+
+/* Search Engine CSS */
+
+.input-city{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.input-city input{
+  width: 70%;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 2px 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  color: #555555;
+}
+
+.input-city button{
+  border: none;
+  border-radius: 8px;
+  background-color: gray;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
+}
+
+
+
+/* Weather info CSS */
+
+
+.city-name{
+  margin-bottom: 10px;
+
+}
+
+.loading{
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+}
+
+.date{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.temperature {
+  font-size: 64px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description{
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.weather-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.more-weather-info{
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+
+}
+
+/* Forecast CSS */
+.row{
+
+  display: flex;
+  justify-content: equally;
+  column-gap: 10px;
+}
+
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background-color:#DAE0E2;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.forecast-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.forecast-card p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .forecast-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .forecast-card {
+    width: 100%;
+  }
+}
